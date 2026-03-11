@@ -10,9 +10,10 @@ import '../styles/index.css'
 
 // components
 import Home from './components/Home';
+import TaskListFetch from "./components/TaskListFetch";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+    <TaskListFetch />
+  </React.StrictMode>
+);

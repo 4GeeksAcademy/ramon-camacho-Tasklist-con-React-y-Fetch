@@ -1,11 +1,127 @@
-/* 
+.task-list {
+  min-height: 100vh;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  font-family: 'Roboto', sans-serif;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+.title {
+  font-size: 90px;
+  font-weight: 100;
+  color: rgba(175, 47, 47, 0.15);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.todo-card {
+  width: 600px;
+  background: white;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.input-container {
+  display: flex;
+  border-bottom: 1px solid #ededed;
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  padding: 18px 20px;
+  font-size: 26px;
+  font-weight: 200;
+  outline: none;
+  color: #555;
+}
+
+.input-container input::placeholder {
+  color: #c8c8c8;
+}
+
+/* Botón agregar */
+
+.add-btn {
+  border: none;
+  background: #f4a5a5;
+  color: white;
+  padding: 0 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-btn:hover {
+  background: #e89090;
+}
+
+
+.todo-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 26px;
+  font-weight: 200;
+  color: #666;
+}
+
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  color: #e6a2a2;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.todo-item:hover .delete-btn {
+  opacity: 1;
+}
+
+
+.todo-empty {
+  padding: 18px 20px;
+  font-size: 22px;
+  font-weight: 200;
+  color: #999;
+}
+
+
+.todo-footer {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #b8b8b8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-btn {
+  border: none;
+  background: transparent;
+  color: #e6a2a2;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.clear-btn:hover {
+  color: #e89090;
+}
